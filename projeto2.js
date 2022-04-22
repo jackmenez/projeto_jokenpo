@@ -22,30 +22,39 @@ for (let i = 1; i < jogadas; i++){
         console.log('Digite uma opção válida!')
         user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
     }if (user == 0 && pc == [0]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Pedra com Pedra da empate!')
         draw++
     }else if (user == 0 && pc == [1]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Papel ganha de pedra!')
         pcwins++
     }else if (user == 0 && pc == [2]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Pedra ganha de Tesoura!')
         wins++
     }else if (user == 1 && pc == [0]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Papel ganha de pedra!')
         wins++
     }else if (user == 1 && pc == [2]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Tesoura ganha de Papel!')
         pcwins++
     }else if (user == 2 && pc == [0]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Pedra ganha de Tesoura!')
         pcwins++
     }else if (user == 2 && pc == [1]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Tesoura ganha de Papel!')
         wins++
     }else if (user == 1 && pc == [1]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Papel com papel da empate!')
         draw++
     }else if (user == 2 && pc == [2]){
+        console.log(`O Computador escolheu ${pc}`)
         console.log('Tesoura com Tesoura da empate!')
         draw++
     }
