@@ -16,7 +16,7 @@ let draw = 0
 //     console.log('Digite uma opção válida!')
 //     user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
 // }
-for (let i = 1; i < jogadas; i++){
+for (let i = 0; i < jogadas; i++){
     let pc = opcoes[Math.floor(Math.random()*3)]
     while (isNaN(user) || (user > 2)){
         console.log('Digite uma opção válida!')
