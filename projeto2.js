@@ -7,15 +7,14 @@ console.log(
 console.log();
 let opcoes = [0, 1, 2];
 let jogadas = +prompt("Quantas vezes você quer jogar? ");
-let user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
 let wins = 0;
 let pcwins = 0;
 let draw = 0;
 for (let i = 0; i < jogadas; i++) {
   let pc = opcoes[Math.floor(Math.random() * 3)];
-  while (isNaN(user) || user > 2) {
+  user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
+  if (isNaN(user) || user > 2) {
     console.log("Digite uma opção válida!");
-    user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
   }
   if (user == 0 && pc == [0]) {
     console.log(`O Computador escolheu ${pc}`);
