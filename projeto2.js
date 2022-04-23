@@ -10,6 +10,10 @@ let jogadas = +prompt("Quantas vezes você quer jogar? ");
 let wins = 0;
 let pcwins = 0;
 let draw = 0;
+if (jogadas != Number){
+  console.log('Digite um número válido!')
+  jogadas = +prompt("Quantas vezes você quer jogar? ");
+}
 for (let i = 0; i < jogadas; i++) {
   let pc = opcoes[Math.floor(Math.random() * 3)];
   user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
