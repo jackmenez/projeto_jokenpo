@@ -19,8 +19,9 @@ while (novamente == 1) {
   for (var i = 0; i < jogadas; i++) {
     let pc = opcoes[Math.floor(Math.random() * 3)];
     user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
-    if (isNaN(user) || user > 2) {
+    while (isNaN(user) || user > 2) {
       console.log("Digite uma opção válida!");
+      user = +prompt("Escolha entre PEDRA(0), PAPEL(1), TESOURA(2): ");
     }
     if (user == 0 && pc == [0]) {
       console.log(`O Computador escolheu ${pc}`);
