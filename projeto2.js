@@ -79,7 +79,7 @@ while (novamente == 1) {
     }
   }
   novamente = +prompt("Deseja jogar novamente? (0)Não (1)Sim: ");
-  while (novamente != 0 || novamente != 1) {
+  while (novamente >= 2) {
     console.log("Digite uma opção válida!");
     novamente = +prompt("Deseja jogar novamente? (0)Não (1)Sim: ");
   }
